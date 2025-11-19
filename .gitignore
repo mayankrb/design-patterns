@@ -1,0 +1,54 @@
+# ----------------------------------
+# 1. IntelliJ IDEA (IDE files)
+# ----------------------------------
+.idea/             # IntelliJ's project settings directory
+*.iml              # Module files (IntelliJ-specific)
+*.iws              # Workspace files
+*.ipr              # Project files
+
+# Directories used by IntelliJ/Android Studio
+/out/
+/target/           # Usually created by Maven/Gradle, but specified here too
+/build/
+
+# Local history files
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/libraries/
+.idea/vcs.xml
+.idea/modules.xml
+.idea/*.iml
+.idea/dictionaries
+.idea/copyright/
+.idea/shelf/
+
+# ----------------------------------
+# 2. JVM & Compiled Artifacts
+# ----------------------------------
+# Bytecode / Compiled classes
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+
+# Standard JVM temporary files
+hs_err_pid*
+*.log
+!error.log          # Keep if you want to track specific logs (like error logs)
+
+# ----------------------------------
+# 3. Maven & Gradle Specific Files
+# ----------------------------------
+/target/            # Maven build directory
+/build/             # Gradle build directory
+.gradle/            # Gradle wrapper files (except wrapper files themselves)
+
+# Generated files for documentation/testing
+/test-output/
+/docs/
+
+# Gradle settings that are user-specific
+.gradle/
+!gradle/wrapper/
