@@ -63,22 +63,6 @@ RateLimiter slidingWindow = new SlidingWindowRateLimiter(20, 10);
 
 ```
 
-### Consuming a Request
-
-```java
-String clientIp = "192.168.1.50";
-RateLimitResult result = slidingWindow.tryConsume(clientIp);
-
-if (result.allowed()) {
-    System.out.println("Proceed with business logic. Remaining slots: " + result.remainingTokens());
-} else {
-    System.out.println("HTTP 429 Too Many Requests");
-    System.out.println("Reason: " + result.reason());
-    System.out.println("Please back off and retry after: " + result.retryAfterMillis() + " ms");
-}
-
-```
-
 ---
 
 ## 🧵 Thread Safety & Concurrency
